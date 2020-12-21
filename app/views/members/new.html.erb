@@ -1,0 +1,16 @@
+    <div class="container">
+        <header>
+            <h1>SINAU HTML, CSS & Ruby on Rails with SIMBAH -odet</h1>
+            <h2>Iki dinggo daftar, nek wes ndue? <%= link_to 'login', root_path %></h2>
+        </header>
+        <div class="badan">
+            <ul>
+                <li><a href=""><img src="/assets/ico.jpg"></a></li>
+                <li>Register</li>
+                <li>
+                <%= render 'form', member: @member %>
+                <%= link_to 'Back', members_path %>
+                </li>
+            </ul>
+        </div>
+    </div>

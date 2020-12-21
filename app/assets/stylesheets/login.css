@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Ubuntu-Regular';
+    src: url(/assets/Ubuntu-Regular.ttf) format("truetype");
+}
+
+body {
+    background: url(/assets/bg2.jpg);
+    background-size: cover;
+    font-family: 'Ubuntu-Regular',Fallback, sans-serif;
+}
+
+.container {
+    background-color: white;
+    border-radius: .75rem;
+    margin: auto;
+    margin-top: 5%;
+    max-height: 100%;
+    height: 525px;
+    width: 80%;
+}
+
+header {
+    background: url(/assets/bg2.jpg);
+    background-size: cover;
+    border-top-left-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+    color: azure;
+    height: 100%;
+    max-width: 40%;
+    margin: auto;
+    float: left;
+}
+
+header h1 {
+    margin: 10%;
+    margin-top: 35%;
+    font-size: 20pt;
+}
+
+header h2 {
+    margin: 10%;
+    margin-top: 15%;
+    font-size: 12pt;
+}
+
+.badan {
+    height: 100%;
+    padding-top: .5%;
+    padding-left: 45%;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+li a img {
+    height: 50px;
+    width: 50px;
+}
+
+.label {
+    background-color: white;
+    border: 4px solid white;
+    font-size: 8pt;
+    margin-left: 1%;
+    margin-top: -1%;
+    position: absolute;
+    color:grey;
+}
+
+.kolom {
+    border: 0.5px grey solid;
+    border-radius: .50rem;
+    display: block;
+    padding: 10px 12px;
+    margin-bottom: 5%;
+    margin-top: 1%;
+    width: 80%;
+}
+
+.field:focus {
+    border: 0.5px brown solid;
+}
+
+li a {
+    color: black;
+    font-size: 10pt;
+    text-decoration: none;
+
+}
+
+input[type=submit] {
+    background-color: brown;
+    border:none;
+    border-radius: 30px;
+    color:white;
+    float: right;
+    padding: 15px 45px;
+    margin-right: 15%;
+    font-size: 11pt;
+    font-weight:600;
+    width: auto;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(104, 39, 13);
+    cursor: pointer;
+}
+
+.submit {
+    background-color: brown;
+    border:none;
+    border-radius: 30px;
+    color:white;
+    float: right;
+    padding: 15px 45px;
+    margin-top: -20%;
+    margin-right: 15%;
+    font-size: 11pt;
+    font-weight:600;
+    width: auto;
+}
+
+.submit:hover {
+    background-color: rgb(104, 39, 13);
+    cursor: pointer;
+}

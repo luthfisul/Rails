@@ -1,0 +1,47 @@
+  <div class="container">
+    <header>
+      <h1>SINAU HTML & CSS with SIMBAH -odet</h1>
+      <h2>Logino nganggo akunmu seng bener, wes ndue?
+          <%- if controller_name != 'sessions' %>
+          <%= link_to "masuk", new_session_path(resource_name) %><br />
+          <% end %>  
+      </h2>
+    </header>
+    <div class="badan">
+      <ul>
+        <li><a href=""><img src="/assets/ico.jpg"></a></li>
+        <li>Daftar</li>
+        <li>
+        
+        <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+        <%= render "devise/shared/error_messages", resource: resource %>
+
+          <div class="field">
+            <%= f.label :email %>
+            <%= f.email_field :email, autofocus: true, autocomplete: "email",class: "kolom" %>
+          </div>
+
+          <div class="field">
+            <%= f.label :password %>
+            <% if @minimum_password_length %>
+            <em>(<%= @minimum_password_length %> characters minimum)</em>
+            <% end %><br />
+            <%= f.password_field :password, autocomplete: "new-password",class: "kolom" %>
+          </div>
+
+          <div class="field">
+            <%= f.label :password_confirmation %>
+            <%= f.password_field :password_confirmation, autocomplete: "new-password",class: "kolom" %>
+          </div>
+
+          <div class="actions">
+            <%= f.submit "Sign up" %>
+          </div>
+            
+          <% end %>
+          <%= render "devise/shared/links" %>
+
+        </li>
+      </ul>
+    </div>
+  </div>

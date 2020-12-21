@@ -1,0 +1,17 @@
+    <div class="container">
+    <header>
+        <h1>SINAU HTML, CSS & Ruby on Rails with SIMBAH -odet</h1>
+        <h2>Iki kanggo ngedit, balik <%= link_to 'menu awal', members_path %> ?</h2>
+    </header>
+    <div class="badan">
+        <ul>
+            <li><a href=""><img src="/assets/ico.jpg"></a></li>
+            <li>Edit Data</li>
+            <li>
+            <%= render 'form', member: @member %>
+            <%= link_to 'Show', @member %> |
+            <%= link_to 'Back', members_path %>
+            </li>
+        </ul>
+    </div>
+    </div>
